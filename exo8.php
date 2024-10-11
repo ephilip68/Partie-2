@@ -8,30 +8,32 @@ $url = "http://my.mobirise.com/data/userpic/764.jpg";
 
 $repeter = 4;
 
- function repeterImage($url, $repeter) {
+echo repeterImage($url, $repeter);
 
-     for($i = 0; $i < $repeter; $i++) {
+function repeterImage($url, $repeter) {
 
-         echo "<img src='$url'>";
+    $result = "<figure>";
+
+    for($i = 0; $i < $repeter; $i++) {
+
+        $result .= "<img src=$url>";
     }
+
+    $result .= "</figure>";
+
+    return $result;
 
 }
 
-repeterImage($url, $repeter);
+
+// repeterImage($url, $repeter);
 
 // function repeterImage($url, $repeter) {
 
-//     $result = "<figure>";
-
 //     for($i = 0; $i < $repeter; $i++) {
 
-//         $result .= "<img src='$url'>";
-//     }
-
-//     $result .= "</figure>";
-
-//     return $result;
+//         echo "<img src='$url'>";
+//    }
 
 // }
 
-// echo repeterImage($url, $repeter);

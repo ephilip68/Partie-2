@@ -6,6 +6,8 @@
 
 $elements = ["Masculin" => false, "Féminin" => false, "Autre" => false];
 
+echo afficherRadio($elements);
+
 function afficherRadio($elements) {
 
     $result = "<form>";
@@ -22,4 +24,3 @@ function afficherRadio($elements) {
 
 }
 
-echo afficherRadio($elements);
